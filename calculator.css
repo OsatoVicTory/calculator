@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: honeydew;
+}
+.container{
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    padding: 0;
+    width: 320px;
+    height: 480px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0.1px 9px rgb(0, 0, 0, 0.25), 0px -0.1px 9px rgb(0, 0, 0, 0.25);
+    background-color: whitesmoke;
+    outline: none;
+}
+.container .history-part{
+    margin-top: 3px;
+    margin-left: 3px;
+    position: absolute;
+    width: 310px;
+    height: 35px;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 0.8px solid rgb(0, 0, 0, 0.25);
+    opacity: 0.6;
+}
+.container .input-part{
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 2px;
+    width: 98%;
+    height: 40px;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    
+}
+.history-part > p{
+    opacity: 0.5;
+}
+.container .keyboard{
+    position: absolute;
+    margin-top: 80px;
+    height: 400px;
+    width: 320px;
+    
+}
+.keyboard .operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    box-shadow: 1px 0px 10px rgb(0, 0, 0, 0.5);
+
+}
+.operator:nth-child(1){
+    background-color: rgba(0, 255, 255, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 0.8px solid rgb(0, 0, 0, 0.1);
+}
+.operator:nth-child(2){
+    background-color: rgba(76, 0, 255, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 0.8px solid rgb(0, 0, 0, 0.1);
+}
+.operator:nth-child(3){
+    background-color: rgba(255, 0, 170, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 0.8px solid rgb(0, 0, 0, 0.1);
+}
+.operator:nth-child(4){
+    background-color: rgba(255, 136, 0, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 0.8px solid rgb(0, 0, 0, 0.1);
+}
+.operator:nth-child(5){
+    background-color: rgba(43, 255, 0, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 7px solid black;
+}
+.operator:nth-child(8){
+    background-color: rgba(0, 255, 64, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 0.8px solid rgb(0, 0, 0, 0.1);
+}
+.operator:nth-child(12){
+    background-color: rgba(0, 255, 149, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 0.8px solid rgb(0, 0, 0, 0.1);
+}
+.operator:nth-child(16){
+    background-color: rgba(183, 0, 255, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 0.8px solid rgb(0, 0, 0, 0.1);
+}
+.operator:nth-child(20){
+    background-color: rgba(255, 0, 0, 0.918);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.3);
+    border: 0.8px solid rgb(0, 0, 0, 0.1);
+}
+div a{
+    text-decoration: none;
+    color: black;
+}
+button:focus{
+    color: white;
+    background-color: grey;
+}
+a:focus{
+    background-color: rosybrown;
+}
+.operator:focus{
+    text-decoration: none;
+    outline: none;
+    
+}
+.operator::after{
+    text-decoration: none;
+}
+.number:focus{
+    text-decoration: none;
+    outline: none;
+    
+}
+.number::after{
+    text-decoration: none;
+}
+.keyboard .empty{
+    border: none;
+    outline: none;
+
+}
